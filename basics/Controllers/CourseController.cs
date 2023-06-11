@@ -1,3 +1,4 @@
+using basics.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace basics.Controllers;
@@ -9,7 +10,13 @@ public class CourseController: Controller {
     // course/index
     public IActionResult Index()
     {
-        return View();
+        var kurs = new Course();
+
+        kurs.Id = 1;
+        kurs.Title = "Aspnet core kursu";
+        kurs.Description = "Güzel bir kurs";
+
+        return View(kurs);
     }
 
     // course/list
