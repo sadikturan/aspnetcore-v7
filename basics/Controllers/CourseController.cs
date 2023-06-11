@@ -7,15 +7,15 @@ public class CourseController: Controller {
 
     // course
     // course/index
-    public string Index()
+    public IActionResult Index()
     {
-        return "course/index";
+        return View();
     }
 
     // course/list
-    public string List()
+    public IActionResult List()
     {
-        return "course/list";
+        return View("CourseList");
     }
 
 }

@@ -18650,8 +18650,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/sadikturan/Desktop/aspnetcore-dersleri/basics/Views/Home/Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "/Users/sadikturan/Desktop/aspnetcore-dersleri/basics/Views/Home/Contact.cshtml",
+      "TargetPath": "Views\\Home\\Contact.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/sadikturan/Desktop/aspnetcore-dersleri/basics/Views/Course/Index.cshtml",
+      "TargetPath": "Views\\Course\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -18672,6 +18677,11 @@
     {
       "FilePath": "/Users/sadikturan/Desktop/aspnetcore-dersleri/basics/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/sadikturan/Desktop/aspnetcore-dersleri/basics/Views/Course/CourseList.cshtml",
+      "TargetPath": "Views\\Course\\CourseList.cshtml",
       "FileKind": "mvc"
     },
     {
