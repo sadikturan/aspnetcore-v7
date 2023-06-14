@@ -9,19 +9,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href="#">CourseApp</a>
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Kurslar</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        @await Html.PartialAsync("_Navbar")
     </header>
     <div class="container mt-3">
         <main>

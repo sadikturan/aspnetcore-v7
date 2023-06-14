@@ -2,17 +2,5 @@
 
 @foreach(var kurs in Model) 
 {
-    <div class="card mb-3" id="kurs_@kurs.Id">
-        <div class="row">
-            <div class="col-md-4">
-                <img src="~/img/@kurs.Image" class="img-fluid rounded-start" alt="">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">@kurs.Title</h5>
-                    <p class="card-text">@kurs.Description</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    @await Html.PartialAsync("_Course", kurs)
 }
