@@ -18645,6 +18645,11 @@
   "RootNamespace": "basics",
   "Documents": [
     {
+      "FilePath": "/Users/sadikturan/Desktop/aspnetcore-dersleri/basics/Views/Course/Details.cshtml",
+      "TargetPath": "Views\\Course\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/sadikturan/Desktop/aspnetcore-dersleri/basics/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
