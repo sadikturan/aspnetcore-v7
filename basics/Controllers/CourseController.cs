@@ -5,26 +5,14 @@ namespace basics.Controllers;
 
 public class CourseController: Controller {
 
-    public IActionResult Index()
+    public IActionResult Details(int? id)
     {
-        var kurs = new Course();
+        if(id==null) {
+            // return Redirect("/course/list");
+            return RedirectToAction("List","Course");
+        }
 
-        kurs.Id = 1;
-        kurs.Title = "Aspnet core kursu";
-        kurs.Description = "Güzel bir kurs";
-        kurs.Image = "1.jpg";
-
-        return View(kurs);
-    }
-
-    public IActionResult Details()
-    {
-        var kurs = new Course();
-
-        kurs.Id = 1;
-        kurs.Title = "Aspnet core kursu";
-        kurs.Description = "Güzel bir kurs";
-        kurs.Image = "1.jpg";
+        var kurs = Repository.GetById(id);
 
         return View(kurs);
     }
