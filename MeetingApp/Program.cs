@@ -4,11 +4,11 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-// mvc
-// rest api
-// razor pages
 
-app.MapGet("/", () => "Hello World!");
-app.MapGet("/abc", () => "deneme");
+// app.MapDefaultControllerRoute();
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Meeting}/{action=Index}/{id?}"
+);
 
 app.Run();

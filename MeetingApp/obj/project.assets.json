@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/sadikturan/Desktop/MeetingApp/MeetingApp.csproj",
+      "projectUniqueName": "/Users/sadikturan/Github/aspnetcore-v7/MeetingApp/MeetingApp.csproj",
       "projectName": "MeetingApp",
-      "projectPath": "/Users/sadikturan/Desktop/MeetingApp/MeetingApp.csproj",
+      "projectPath": "/Users/sadikturan/Github/aspnetcore-v7/MeetingApp/MeetingApp.csproj",
       "packagesPath": "/Users/sadikturan/.nuget/packages/",
-      "outputPath": "/Users/sadikturan/Desktop/MeetingApp/obj/",
+      "outputPath": "/Users/sadikturan/Github/aspnetcore-v7/MeetingApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/sadikturan/.nuget/NuGet/NuGet.Config"
