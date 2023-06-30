@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XZQg6ULetj1o+EkMQLtRFBdVIXRpujhlla3Jj12OTgNOvzQ2H5Y8Kj3uMOFKhzfIxPAtht5aTu7bluT0x8HJrg==",
+  "dgSpecHash": "mq/zBif7G16ow332agC2XEde/dXd5wXSfC6bqeaR+fkRuRfGdhhwVZ80y4WStT/tQ7pKFOdEw+J3r75/TGCyhg==",
   "success": true,
-  "projectFilePath": "/Users/sadikturan/Github/aspnetcore-v7/MeetingApp/MeetingApp.csproj",
+  "projectFilePath": "/Users/sadikturan/Desktop/aspnetcore-dersleri/MeetingApp/MeetingApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
