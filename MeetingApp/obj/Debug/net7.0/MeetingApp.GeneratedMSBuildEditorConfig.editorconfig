@@ -9,41 +9,45 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MeetingApp
 build_property.RootNamespace = MeetingApp
-build_property.ProjectDir = /Users/sadikturan/Desktop/aspnetcore-dersleri/MeetingApp/
+build_property.ProjectDir = /Users/sadikturan/Github/aspnetcore-v7/MeetingApp/
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/sadikturan/Desktop/aspnetcore-dersleri/MeetingApp
+build_property.MSBuildProjectDirectory = /Users/sadikturan/Github/aspnetcore-v7/MeetingApp
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/sadikturan/Desktop/aspnetcore-dersleri/MeetingApp/Views/Home/Index.cshtml]
+[/Users/sadikturan/Github/aspnetcore-v7/MeetingApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sadikturan/Desktop/aspnetcore-dersleri/MeetingApp/Views/Meeting/Apply.cshtml]
+[/Users/sadikturan/Github/aspnetcore-v7/MeetingApp/Views/Meeting/Apply.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVldGluZy9BcHBseS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sadikturan/Desktop/aspnetcore-dersleri/MeetingApp/Views/Meeting/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVldGluZy9JbmRleC5jc2h0bWw=
+[/Users/sadikturan/Github/aspnetcore-v7/MeetingApp/Views/Meeting/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVldGluZy9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sadikturan/Desktop/aspnetcore-dersleri/MeetingApp/Views/Meeting/List.cshtml]
+[/Users/sadikturan/Github/aspnetcore-v7/MeetingApp/Views/Meeting/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVldGluZy9MaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sadikturan/Desktop/aspnetcore-dersleri/MeetingApp/Views/Shared/_Layout.cshtml]
+[/Users/sadikturan/Github/aspnetcore-v7/MeetingApp/Views/Meeting/Thanks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVldGluZy9UaGFua3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sadikturan/Github/aspnetcore-v7/MeetingApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sadikturan/Desktop/aspnetcore-dersleri/MeetingApp/Views/Shared/_Layout2.cshtml]
+[/Users/sadikturan/Github/aspnetcore-v7/MeetingApp/Views/Shared/_Layout2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sadikturan/Desktop/aspnetcore-dersleri/MeetingApp/Views/_ViewImports.cshtml]
+[/Users/sadikturan/Github/aspnetcore-v7/MeetingApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/sadikturan/Desktop/aspnetcore-dersleri/MeetingApp/Views/_ViewStart.cshtml]
+[/Users/sadikturan/Github/aspnetcore-v7/MeetingApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
