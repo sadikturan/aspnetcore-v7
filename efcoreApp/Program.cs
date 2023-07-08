@@ -1,7 +1,16 @@
+using efcoreApp.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<DataContext>(options => {
+    var config = builder.Configuration;
+    var connectionString = config.GetConnectionString("database");
+    options.UseSqlite(connectionString);
+});
 
 var app = builder.Build();
 

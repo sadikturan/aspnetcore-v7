@@ -8,7 +8,4 @@ namespace efcoreApp.Data
         public DbSet<Ogrenci> Ogrenciler => Set<Ogrenci>();
         public DbSet<KursKayit> KursKayitlari => Set<KursKayit>();
     }
-
-    // code-first => entity, dbcontext => database (sqlite)
-    // database-first => sql server
 }
