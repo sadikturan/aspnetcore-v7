@@ -1,5 +1,6 @@
 using efcoreApp.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace efcoreApp.Controllers
 {
@@ -10,6 +11,12 @@ namespace efcoreApp.Controllers
         {
             _context = context;
         }
+
+        public async Task<IActionResult> Index()
+        {
+            return View(await _context.Ogrenciler.ToListAsync());
+        }
+
         public IActionResult Create()
         {
             return View();
@@ -20,7 +27,7 @@ namespace efcoreApp.Controllers
         {
             _context.Ogrenciler.Add(model);
             await _context.SaveChangesAsync();
-            return RedirectToAction("Index","Home");
+            return RedirectToAction("Index");
         }
     }
 }
