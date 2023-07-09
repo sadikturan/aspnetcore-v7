@@ -18675,6 +18675,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/sadikturan/Desktop/aspnetcore-dersleri/efcoreApp/Views/Ogrenci/Create.cshtml",
+      "TargetPath": "Views\\Ogrenci\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/sadikturan/Desktop/aspnetcore-dersleri/efcoreApp/Views/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
