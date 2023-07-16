@@ -30,6 +30,7 @@ namespace efcoreApp.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpGet]
         public async Task<IActionResult> Edit(int? id)
         {
             if(id == null)
@@ -38,7 +39,6 @@ namespace efcoreApp.Controllers
             }
 
             var ogr = await _context.Ogrenciler.FindAsync(id);
-            // var ogr = await _context.Ogrenciler.FirstOrDefaultAsync(o => o.OgrenciId == id);
 
             if(ogr == null) 
             {
@@ -46,6 +46,39 @@ namespace efcoreApp.Controllers
             }
 
             return View(ogr);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, Ogrenci model)
+        {
+            if(id != model.OgrenciId)
+            {
+                return NotFound();
+            }
+
+            if(ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(model);
+                    await _context.SaveChangesAsync();
+                }
+                catch(DbUpdateConcurrencyException)
+                {
+                    if(!_context.Ogrenciler.Any(o => o.OgrenciId == model.OgrenciId))
+                    {
+                        return NotFound();
+                    } 
+                    else 
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction("Index");
+            }
+
+            return View(model);
         }
         
     }
