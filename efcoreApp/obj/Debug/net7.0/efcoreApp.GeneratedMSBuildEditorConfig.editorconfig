@@ -24,8 +24,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/sadikturan/Github/aspnetcore-v7/efcoreApp/Views/Kurs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvS3Vycy9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/sadikturan/Github/aspnetcore-v7/efcoreApp/Views/Ogrenci/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT2dyZW5jaS9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/sadikturan/Github/aspnetcore-v7/efcoreApp/Views/Ogrenci/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT2dyZW5jaS9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/sadikturan/Github/aspnetcore-v7/efcoreApp/Views/Ogrenci/Edit.cshtml]
