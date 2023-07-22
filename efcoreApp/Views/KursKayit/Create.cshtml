@@ -5,11 +5,15 @@
 <form asp-controller="KursKayit" asp-action="Create" method="post">
     <div class="mb-3">
         <label asp-for="OgrenciId" class="form-label">Öğrenci</label>
-        <select asp-items="ViewBag.Ogrenciler" class="form-control"></select>
+        <select asp-for="OgrenciId" asp-items="ViewBag.Ogrenciler" class="form-control">
+            <option value="">Seçiniz</option>
+        </select>
     </div>
     <div class="mb-3">
         <label asp-for="KursId" class="form-label">Kurs</label>
-        <select asp-items="ViewBag.Kurslar" class="form-control"></select>
+        <select asp-for="KursId" asp-items="ViewBag.Kurslar" class="form-control">
+            <option value="">Seçiniz</option>
+        </select>
     </div>
 
     <button type="submit" class="btn btn-secondary">Kaydet</button>

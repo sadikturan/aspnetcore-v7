@@ -20,11 +20,23 @@ namespace efcoreApp.Controllers
 
         public async Task<IActionResult> Create()
         {
-            ViewBag.Ogrenciler = new SelectList(await _context.Ogrenciler.ToListAsync(), "OgrenciId","OgrenciAd");
+            ViewBag.Ogrenciler = new SelectList(await _context.Ogrenciler.ToListAsync(), "OgrenciId","AdSoyad");
             ViewBag.Kurslar = new SelectList(await _context.Kurslar.ToListAsync(), "KursId","Baslik");
 
             return View();
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]        
+        public async Task<IActionResult> Create(KursKayit model)
+        {
+            model.KayitTarihi = DateTime.Now;
+            _context.KursKayitlari.Add(model);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Index");
+        }
+
 
     }
 }
