@@ -18660,6 +18660,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/sadikturan/Github/aspnetcore-v7/efcoreApp/Views/KursKayit/Create.cshtml",
+      "TargetPath": "Views\\KursKayit\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/sadikturan/Github/aspnetcore-v7/efcoreApp/Views/Kurs/Delete.cshtml",
       "TargetPath": "Views\\Kurs\\Delete.cshtml",
       "FileKind": "mvc"
@@ -18687,6 +18692,11 @@
     {
       "FilePath": "/Users/sadikturan/Github/aspnetcore-v7/efcoreApp/Views/Kurs/Index.cshtml",
       "TargetPath": "Views\\Kurs\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/sadikturan/Github/aspnetcore-v7/efcoreApp/Views/KursKayit/Index.cshtml",
+      "TargetPath": "Views\\KursKayit\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
