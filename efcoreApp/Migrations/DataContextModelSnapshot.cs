@@ -26,14 +26,14 @@ namespace efcoreApp.Migrations
                     b.Property<string>("Baslik")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("OgretmenId")
+                    b.Property<int?>("OgretmenId")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("KursId");
 
                     b.HasIndex("OgretmenId");
 
-                    b.ToTable("Kurslar");
+                    b.ToTable("Kurslar", (string)null);
                 });
 
             modelBuilder.Entity("efcoreApp.Data.KursKayit", b =>
@@ -57,7 +57,7 @@ namespace efcoreApp.Migrations
 
                     b.HasIndex("OgrenciId");
 
-                    b.ToTable("KursKayitlari");
+                    b.ToTable("KursKayitlari", (string)null);
                 });
 
             modelBuilder.Entity("efcoreApp.Data.Ogrenci", b =>
@@ -80,7 +80,7 @@ namespace efcoreApp.Migrations
 
                     b.HasKey("OgrenciId");
 
-                    b.ToTable("Ogrenciler");
+                    b.ToTable("Ogrenciler", (string)null);
                 });
 
             modelBuilder.Entity("efcoreApp.Data.Ogretmen", b =>
@@ -106,16 +106,14 @@ namespace efcoreApp.Migrations
 
                     b.HasKey("OgretmenId");
 
-                    b.ToTable("Ogretmenler");
+                    b.ToTable("Ogretmenler", (string)null);
                 });
 
             modelBuilder.Entity("efcoreApp.Data.Kurs", b =>
                 {
                     b.HasOne("efcoreApp.Data.Ogretmen", "Ogretmen")
                         .WithMany("Kurslar")
-                        .HasForeignKey("OgretmenId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("OgretmenId");
 
                     b.Navigation("Ogretmen");
                 });

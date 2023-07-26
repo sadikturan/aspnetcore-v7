@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cwLzVViibXq4JNFy3PS/fTRqFBeu5h5VFGd+FrrtN/OEkQ9GOOXHkciD18GJ1v9XUdQbzVVeeYnnOv0hxlh4nQ==",
+  "dgSpecHash": "NItP2C/J0a9xvqDr06sviFI/0XgP/pUPQ4F8HLOnKszwf6YT6kOvhWFkNhBomNbkIsqmzfFWUH9rldG81lTdbg==",
   "success": true,
-  "projectFilePath": "/Users/sadikturan/Desktop/aspnetcore-dersleri/efcoreApp/efcoreApp.csproj",
+  "projectFilePath": "/Users/sadikturan/Github/aspnetcore-v7/efcoreApp/efcoreApp.csproj",
   "expectedPackageFiles": [
     "/Users/sadikturan/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/sadikturan/.nuget/packages/microsoft.data.sqlite.core/7.0.8/microsoft.data.sqlite.core.7.0.8.nupkg.sha512",
