@@ -22,9 +22,13 @@
                         <!-- <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li> -->
-                     
                     </ul>
                 </div>
+                <form class="d-flex" asp-action="Index" method="get">
+                    <input type="search" class="form-control me-2" name="searchString" value="@ViewBag.SearchString" placeholder="Anahtar Kelime">
+                    <button type="submit" class="btn btn-primary">Ara</button>
+                </form>
+
             </div>
         </nav>
     </header>
