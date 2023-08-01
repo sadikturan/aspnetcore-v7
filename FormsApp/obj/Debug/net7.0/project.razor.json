@@ -18650,11 +18650,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/sadikturan/Github/aspnetcore-v7/FormsApp/Views/Home/Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "/Users/sadikturan/Github/aspnetcore-v7/FormsApp/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -18662,6 +18657,11 @@
     {
       "FilePath": "/Users/sadikturan/Github/aspnetcore-v7/FormsApp/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/sadikturan/Github/aspnetcore-v7/FormsApp/Views/Home/Create.cshtml",
+      "TargetPath": "Views\\Home\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
