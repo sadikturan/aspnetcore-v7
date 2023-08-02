@@ -1,4 +1,6 @@
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace FormsApp.Models
 {
@@ -6,7 +8,6 @@ namespace FormsApp.Models
     {
         [Display(Name="Urun Id")]
         public int ProductId { get; set; }
-
         [Required]
         [Display(Name="Urun Adı")]
         public string Name { get; set; } = string.Empty;
