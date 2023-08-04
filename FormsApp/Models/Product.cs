@@ -27,6 +27,7 @@ namespace FormsApp.Models
         
         [Required]
         public int? CategoryId { get; set; }
+
     }
 }
 
