@@ -5,6 +5,7 @@
 
 <form asp-controller="Home" asp-action="Edit" method="post" enctype="multipart/form-data">
     <div asp-validation-summary="All"></div>
+    <input type="hidden" asp-for="ProductId">
     <div class="mb-3">
         <label asp-for="Name" class="form-label"></label>
         <input asp-for="Name" class="form-control">
