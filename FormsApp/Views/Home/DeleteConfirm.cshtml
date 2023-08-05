@@ -1,0 +1,13 @@
+@model Product
+
+
+<div>
+    <p>
+        @Model.Name isimli ürünü silmek istiyor musunuz?
+        <form action="" method="post">
+            <input type="hidden" asp-for="@Model.ProductId">
+            <button type="submit" class="btn btn-danger">Evet</button>
+            <a href="/" class="btn btn-primary">Hayır</a>
+        </form>
+    </p>
+</div>
