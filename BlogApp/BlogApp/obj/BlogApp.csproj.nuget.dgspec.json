@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sadikturan/Desktop/BlogApp/BlogApp/BlogApp.csproj": {}
+    "/Users/sadikturan/Github/aspnetcore-v7/BlogApp/BlogApp/BlogApp.csproj": {}
   },
   "projects": {
-    "/Users/sadikturan/Desktop/BlogApp/BlogApp/BlogApp.csproj": {
+    "/Users/sadikturan/Github/aspnetcore-v7/BlogApp/BlogApp/BlogApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sadikturan/Desktop/BlogApp/BlogApp/BlogApp.csproj",
+        "projectUniqueName": "/Users/sadikturan/Github/aspnetcore-v7/BlogApp/BlogApp/BlogApp.csproj",
         "projectName": "BlogApp",
-        "projectPath": "/Users/sadikturan/Desktop/BlogApp/BlogApp/BlogApp.csproj",
+        "projectPath": "/Users/sadikturan/Github/aspnetcore-v7/BlogApp/BlogApp/BlogApp.csproj",
         "packagesPath": "/Users/sadikturan/.nuget/packages/",
-        "outputPath": "/Users/sadikturan/Desktop/BlogApp/BlogApp/obj/",
+        "outputPath": "/Users/sadikturan/Github/aspnetcore-v7/BlogApp/BlogApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/sadikturan/.nuget/NuGet/NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3bNhHmQo8e7CvhqOn7zlIHitGIrmFdy0ATKvYzlTXhHlpCK59EPPcfu7konkTB2+34O0TRnBrK4x/chYgBoodg==",
+  "dgSpecHash": "eVWdr78pmD/6cixeBMXrAyi+YgHqc7N35PcgdPnLuBMckw+hHswkVzIYJaeiD/GYPRNeTZ4GSdEkXiYgHOX5TQ==",
   "success": true,
-  "projectFilePath": "/Users/sadikturan/Desktop/BlogApp/BlogApp/BlogApp.csproj",
+  "projectFilePath": "/Users/sadikturan/Github/aspnetcore-v7/BlogApp/BlogApp/BlogApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
