@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z2jZ82T/lIKiJGjAP3vKIQsv6OLJe+1qcTeLfhDIY4ZAfsno6pMbqQQ6Db6VSzJddClgQ+GrzmSmZBSz9bOM4g==",
+  "dgSpecHash": "yRwgKnUtNjmhUpRDWWxcxBvK6uQAOFu8OhFEdELHvpqHgmpsrlU6AAtMuAHk56JiDTIXrgxlZQIb9+c1Jt5YXA==",
   "success": true,
-  "projectFilePath": "/Users/sadikturan/Github/aspnetcore-v7/BlogApp/BlogApp/BlogApp.csproj",
+  "projectFilePath": "/Users/sadikturan/Desktop/aspnetcore-dersleri/BlogApp/BlogApp/BlogApp.csproj",
   "expectedPackageFiles": [
     "/Users/sadikturan/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/sadikturan/.nuget/packages/microsoft.data.sqlite.core/7.0.10/microsoft.data.sqlite.core.7.0.10.nupkg.sha512",
@@ -24,6 +24,8 @@
     "/Users/sadikturan/.nuget/packages/microsoft.extensions.options/7.0.0/microsoft.extensions.options.7.0.0.nupkg.sha512",
     "/Users/sadikturan/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "/Users/sadikturan/.nuget/packages/mono.texttemplating/2.2.1/mono.texttemplating.2.2.1.nupkg.sha512",
+    "/Users/sadikturan/.nuget/packages/mysqlconnector/2.2.5/mysqlconnector.2.2.5.nupkg.sha512",
+    "/Users/sadikturan/.nuget/packages/pomelo.entityframeworkcore.mysql/7.0.0/pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512",
     "/Users/sadikturan/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.1.4/sqlitepclraw.bundle_e_sqlite3.2.1.4.nupkg.sha512",
     "/Users/sadikturan/.nuget/packages/sqlitepclraw.core/2.1.4/sqlitepclraw.core.2.1.4.nupkg.sha512",
     "/Users/sadikturan/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.1.4/sqlitepclraw.lib.e_sqlite3.2.1.4.nupkg.sha512",
