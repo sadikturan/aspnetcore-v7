@@ -1,10 +1,10 @@
-@model List<Post>
+@model PostsViewModel
 
 <div class="row">
     <div class="col-lg-8">
         <div class="bg-white p-4">
             <h1 class="h4 mb-4">Popular Posts</h1>
-            @foreach(var post in Model)
+            @foreach(var post in Model.Posts)
             {
                 <div class="card bg-transparent border-0 mb-3">
                     <div class="row">
@@ -29,7 +29,24 @@
             </nav>
         </div>
     </div>
-    <div class="col-lg-4"></div>
+    <div class="col-lg-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="cart-title">Tags</h5>
+            </div>
+            <div class="card-body">
+                <ul class="list-inline d-flex flex-wrap gap-2">
+                    @foreach(var tag in Model.Tags)
+                    {
+                        <li class="list-inline-item">
+                            <a class="btn btn-outline-secondary btn-sm">@tag.Text</a>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+        
+    </div>
 </div>
 
 
