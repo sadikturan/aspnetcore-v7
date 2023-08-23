@@ -9,7 +9,7 @@
             @foreach(var tag in Model)
             {
                 <li class="list-inline-item">
-                    <a class="btn btn-outline-secondary btn-sm">@tag.Text</a>
+                    <a href="/posts/tag/@tag.Url" class="btn btn-outline-secondary btn-sm">@tag.Text</a>
                 </li>
             }
         </ul>
