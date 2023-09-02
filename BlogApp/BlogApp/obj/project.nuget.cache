@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z2jZ82T/lIKiJGjAP3vKIQsv6OLJe+1qcTeLfhDIY4ZAfsno6pMbqQQ6Db6VSzJddClgQ+GrzmSmZBSz9bOM4g==",
+  "dgSpecHash": "uABOcwgkeRws3rv/2bcRnU/Agy8mPEm0eK0fc80kK2DlojN2Oc/4tS+gOlaYZuFqWVg190NZmPY1U0nl4GrhKQ==",
   "success": true,
-  "projectFilePath": "/Users/sadikturan/Github/aspnetcore-v7/BlogApp/BlogApp/BlogApp.csproj",
+  "projectFilePath": "/Users/sadikturan/Desktop/aspnetcore-dersleri/BlogApp/BlogApp/BlogApp.csproj",
   "expectedPackageFiles": [
     "/Users/sadikturan/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/sadikturan/.nuget/packages/microsoft.data.sqlite.core/7.0.10/microsoft.data.sqlite.core.7.0.10.nupkg.sha512",
