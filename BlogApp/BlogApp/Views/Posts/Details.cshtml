@@ -24,9 +24,9 @@
                         <div class="my-4 d-flex">
                             <img src="/img/@comment.User.Image" alt="" class="avatar rounded-circle float-start me-3">
                             <div>
-                                <div class="mb-2">
-                                    <h6>@comment.User.UserName</h6>
-                                    <span>@comment.PublishedOn</span>
+                                <div class="mb-2 d-flex">
+                                    <h6 class="me-2">@comment.User.UserName</h6>
+                                    <small>@comment.PublishedOn.ToString("G")</small>
                                 </div>
                                 <p>@comment.Text</p>
                             </div>
@@ -37,6 +37,7 @@
                         <h4 class="mb-3">Yorum Ekle</h4>
                         <form action="/posts/AddComment" method="post">
                             <input type="hidden" name="PostId" value="@Model.PostId">
+                            <input type="hidden" name="Url" value="@Model.Url">
                             <div class="mb-3">
                                 <label for="UserName" class="form-label">UserName</label>
                                 <input type="text" name="UserName" id="UserName" class="form-control">
