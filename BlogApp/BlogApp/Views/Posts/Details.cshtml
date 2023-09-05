@@ -36,8 +36,7 @@
                     <div>
                         <h4 class="mb-3">Yorum Ekle</h4>
                         <form action="/posts/AddComment" method="post">
-                            <input type="hidden" name="PostId" value="@Model.PostId">
-                            <input type="hidden" name="Url" value="@Model.Url">
+                            <input type="hidden" id="PostId" name="PostId" value="@Model.PostId">
                             <div class="mb-3">
                                 <label for="UserName" class="form-label">UserName</label>
                                 <input type="text" name="UserName" id="UserName" class="form-control">
@@ -47,7 +46,7 @@
                                 <textarea type="text" name="Text" id="Text" rows="3" class="form-control"></textarea>
                             </div>
                             <div class="mb-3">
-                                <button type="submit" class="btn btn-primary">Kaydet</button>
+                                <button id="btnYorumKayit" type="submit" class="btn btn-primary">Kaydet</button>
                             </div>
                         </form>
                     </div>
@@ -61,5 +60,32 @@
     </div>
        
 </div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $("#btnYorumKayit").click(function() {
+                $.ajax({
+                    type: 'POST',
+                    url: '@Url.Action("AddComment")',
+                    dataType: 'json',
+                    data: {
+                        PostId: $('#PostId').val(),
+                        UserName: $('#UserName').val(),
+                        Text: $('#Text').val(),
+                    },
+                    success: function(yorum) {
+                        console.log(yorum);
+                    }
+                });
+
+                return false;
+            });
+
+        });
+    </script>
+}
 
 
