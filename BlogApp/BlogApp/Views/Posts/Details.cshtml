@@ -16,22 +16,25 @@
         <div class="bg-white mt-3">
             <div class="card border-0">
                 <div class="card-header pb-0">
-                    <h4>@Model.Comments.Count() adet yorum</h4>
+                    <h4><span id="commentCount">@Model.Comments.Count()</span> adet yorum</h4>
                 </div>
                 <div class="card-body">
-                    @foreach(var comment in Model.Comments)
-                    {
-                        <div class="my-4 d-flex">
-                            <img src="/img/@comment.User.Image" alt="" class="avatar rounded-circle float-start me-3">
-                            <div>
-                                <div class="mb-2 d-flex">
-                                    <h6 class="me-2">@comment.User.UserName</h6>
-                                    <small>@comment.PublishedOn.ToString("G")</small>
+                    <div id="comments">
+                        @foreach(var comment in Model.Comments)
+                        {
+                            <div class="my-4 d-flex">
+                                <img src="/img/@comment.User.Image" alt="" class="avatar rounded-circle float-start me-3">
+                                <div>
+                                    <div class="mb-2 d-flex">
+                                        <h6 class="me-2">@comment.User.UserName</h6>
+                                        <small>@comment.PublishedOn.ToString("G")</small>
+                                    </div>
+                                    <p>@comment.Text</p>
                                 </div>
-                                <p>@comment.Text</p>
                             </div>
-                        </div>
-                    }
+                        }
+                    </div>
+
                     <hr class="my-4">
                     <div>
                         <h4 class="mb-3">Yorum Ekle</h4>
@@ -77,7 +80,26 @@
                         Text: $('#Text').val(),
                     },
                     success: function(yorum) {
-                        console.log(yorum);
+                        var date = new Date(yorum.publishedOn);
+
+                        $("#comments").append(`
+                            <div class="my-4 d-flex">
+                                <img src="/img/${yorum.image}" alt="" class="avatar rounded-circle float-start me-3">
+                                <div>
+                                    <div class="mb-2 d-flex">
+                                        <h6 class="me-2">${yorum.userName}</h6>
+                                        <small>${date.toLocaleDateString()}</small>
+                                    </div>
+                                    <p>${yorum.text}</p>
+                                </div>
+                            </div>
+                        `);
+
+                        $("#UserName").val('');
+                        $("#Text").val('');
+
+                        var adet = parseInt($("#commentCount").text());
+                        $("#commentCount").text(adet + 1);
                     }
                 });
 
