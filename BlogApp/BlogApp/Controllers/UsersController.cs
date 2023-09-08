@@ -47,6 +47,7 @@ namespace BlogApp.Controllers
                     userClaims.Add(new Claim(ClaimTypes.NameIdentifier, isUser.UserId.ToString()));
                     userClaims.Add(new Claim(ClaimTypes.Name, isUser.UserName ?? ""));
                     userClaims.Add(new Claim(ClaimTypes.GivenName, isUser.Name ?? ""));
+                    userClaims.Add(new Claim(ClaimTypes.UserData, isUser.Image ?? ""));
 
                     if(isUser.Email == "info@sadikturan.com")
                     {
