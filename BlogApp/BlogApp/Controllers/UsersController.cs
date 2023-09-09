@@ -27,6 +27,21 @@ namespace BlogApp.Controllers
             return View();
         }
 
+        public IActionResult Register()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Register(RegisterViewModel model)
+        {
+            if(ModelState.IsValid)
+            {
+                return RedirectToAction("Login");
+            }
+            return View(model);
+        }
+
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
