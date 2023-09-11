@@ -11,7 +11,7 @@
                 } 
             </div>
             <img src="~/img/@Model.Image" class="img-fluid rounded" alt="">
-            <div>@Model.Content</div>            
+            <div>@Html.Raw(@Model.Content)</div>            
         </div>
         <div class="bg-white mt-3">
             <div class="card border-0">
