@@ -18,5 +18,21 @@ namespace BlogApp.Data.Concrete
             _context.Posts.Add(post);
             _context.SaveChanges();
         }
+
+        public void EditPost(Post post)
+        {
+            var entity = _context.Posts.FirstOrDefault(i => i.PostId == post.PostId);
+
+            if(entity != null)
+            {
+                entity.Title = post.Title;
+                entity.Description = post.Description;
+                entity.Content = post.Content;
+                entity.Url = post.Url;
+                entity.IsActive = post.IsActive;
+
+                _context.SaveChanges();
+            }
+        }
     }
 }
