@@ -13,10 +13,12 @@ namespace BlogApp.Controllers
     {
         private IPostRepository _postRepository;
         private ICommentRepository _commentRepository;
-        public PostsController(IPostRepository postRepository, ICommentRepository commentRepository)
+        private ITagRepository _tagRepository;
+        public PostsController(IPostRepository postRepository, ICommentRepository commentRepository, ITagRepository tagRepository)
         {
             _postRepository = postRepository;
             _commentRepository = commentRepository;
+            _tagRepository = tagRepository;
         }
         public async Task<IActionResult> Index(string tag)
         {
@@ -118,11 +120,13 @@ namespace BlogApp.Controllers
             {
                 return NotFound();
             }
-            var post = _postRepository.Posts.FirstOrDefault(i=>  i.PostId == id);
+            var post = _postRepository.Posts.Include(i=>i.Tags).FirstOrDefault(i=>  i.PostId == id);
             if(post == null)
             {
                 return NotFound();
             }
+
+            ViewBag.Tags = _tagRepository.Tags.ToList();
 
             return View(new PostCreateViewModel {
                 PostId = post.PostId,
@@ -130,7 +134,8 @@ namespace BlogApp.Controllers
                 Description = post.Description,
                 Content = post.Content,
                 Url = post.Url,
-                IsActive = post.IsActive
+                IsActive = post.IsActive,
+                Tags = post.Tags
             });
         }
 
