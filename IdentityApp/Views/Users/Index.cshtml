@@ -1,4 +1,4 @@
-@model IEnumerable<IdentityUser>
+@model IEnumerable<AppUser>
 
 <a class="btn btn-primary" asp-action="Create">Create User</a>
 <hr>
@@ -16,7 +16,7 @@
         {
             <tr>
                 <td>@user.Id</td>
-                <td>@user.UserName</td>
+                <td>@user.FullName</td>
                 <td>@user.Email</td>
                 <td>
                     <a href="" class="btn btn-primary btn-sm">Edit</a>
