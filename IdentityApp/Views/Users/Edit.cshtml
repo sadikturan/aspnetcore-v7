@@ -13,13 +13,20 @@
         <label asp-for="Email"></label>
         <input asp-for="Email" class="form-control">
     </div>
-     <div class="mb-3">
-        <label asp-for="Password"></label>
-        <input asp-for="Password" class="form-control">
-    </div>
-     <div class="mb-3">
-        <label asp-for="ConfirmPassword"></label>
-        <input asp-for="ConfirmPassword" class="form-control">
+    <div class="card">
+        <div class="card-header">
+            Parola Güncelle
+        </div>
+        <div class="card-body">
+            <div class="mb-3">
+                <label asp-for="Password"></label>
+                <input asp-for="Password" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label asp-for="ConfirmPassword"></label>
+                <input asp-for="ConfirmPassword" class="form-control">
+            </div>
+        </div>
     </div>
     <button type="submit" class="btn btn-primary">Kaydet</button>
 </form>
