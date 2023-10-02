@@ -1,2 +1,34 @@
+@model IEnumerable<AppRole>
+
 <a class="btn btn-primary" asp-action="Create">Create Role</a>
 <hr>
+
+<table class="table table-sm table-bordered">
+    <tr>
+        <th>Id</th>
+        <th>Role Adı</th>
+        <th>Kullanıcılar</th>
+        <th style="width: 125px;"></th>
+    </tr>
+
+    @if(Model.Count() == 0)
+    {
+        <tr><td colspan="4" class="text-center">Role Yok</td></tr>
+    }
+
+    @foreach(var role in Model)
+    {
+        <tr>
+            <td>@role.Id</td>
+            <td>@role.Name</td>
+            <td>kullanıcı listesi</td>
+            <td>
+                <form method="post">
+                    <a class="btn btn-primary btn-sm">Edit</a>
+                    <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                </form>
+            </td>
+        </tr>
+    }
+
+</table>
