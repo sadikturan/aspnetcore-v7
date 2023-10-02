@@ -38,7 +38,13 @@
             @foreach(var role in ViewBag.Roles)
             {
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input" name="" id="@role">
+                    <input type="checkbox" 
+                    class="form-check-input" 
+                    name="SelectedRoles"
+                    value="@role" 
+                    id="@role"
+                    @(Model.SelectedRoles.Any(i => i == role) ? "checked": "")
+                    >
                     <label for="@role" class="form-check-label">@role</label>
                 </div>
             }
