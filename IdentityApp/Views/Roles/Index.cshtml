@@ -24,7 +24,7 @@
             <td asp-role-users="@role.Id"></td>
             <td>
                 <form method="post">
-                    <a class="btn btn-primary btn-sm">Edit</a>
+                    <a class="btn btn-primary btn-sm" asp-action="Edit" asp-route-id="@role.Id">Edit</a>
                     <button type="submit" class="btn btn-sm btn-danger">Delete</button>
                 </form>
             </td>
