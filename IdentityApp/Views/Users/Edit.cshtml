@@ -43,8 +43,10 @@
                     name="SelectedRoles"
                     value="@role" 
                     id="@role"
-                    @(Model.SelectedRoles.Any(i => i == role) ? "checked": "")
-                    >
+                    @if(Model.SelectedRoles != null) 
+                    {
+                        @(Model.SelectedRoles.Any(i => i == role) ? "checked": "")
+                    }>
                     <label for="@role" class="form-check-label">@role</label>
                 </div>
             }
