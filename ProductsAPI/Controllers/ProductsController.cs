@@ -24,7 +24,7 @@ namespace ProductsAPI.Controllers
             return Ok(products);
         }
 
-        // localhost:5000/api/products/1 => GET
+        // localhost:5000/api/products/5 => GET
         [HttpGet("{id}")]
         public async Task<IActionResult> GetProduct(int? id)
         {   
@@ -41,6 +41,15 @@ namespace ProductsAPI.Controllers
             }
 
             return Ok(p);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateProduct(Product entity)
+        {
+            _context.Products.Add(entity);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(GetProduct),new { id = entity.ProductId }, entity);
         }
     }
 }
