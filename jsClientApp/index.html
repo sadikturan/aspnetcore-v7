@@ -16,8 +16,8 @@
 
         const getProducts = async () => {
             const response = await fetch("http://localhost:5126/api/products");
-            const products = response.json();
-
+            const products = await response.json();
+            console.log(products);
             displayProducts(products);
         }
 
