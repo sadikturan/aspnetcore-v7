@@ -7,12 +7,27 @@
 </head>
 <body>
     <button onclick="getProducts()">Get Products</button>
+    <button onclick="getProductById()">Get Product</button>
+    <button onclick="login()">Login</button>
 
     <div id="divProducts">
         
     </div>
 
     <script>
+
+        const login = async () => {
+            const response = await fetch("http://localhost:5126/api/users/login", {
+                headers: {
+                    "Accept": "application/json",
+                    "Content-Type": "application/json",
+                },
+                method: "POST",
+                body: JSON.stringify({ email: 'info@sadikturan.com', password: '135790'})
+            });
+            const result = await response.json();
+            localStorage.setItem("token", JSON.stringify(result.token));
+        }
 
         const getProducts = async () => {
             const response = await fetch("http://localhost:5126/api/products");
@@ -21,6 +36,26 @@
             displayProducts(products);
         }
 
+        const getProductById = async () => {
+            const token = JSON.parse(localStorage.getItem("token"));
+            const response = await fetch("http://localhost:5126/api/products/4", {
+                headers: { Authorization: `Bearer ${token}`}
+            });
+            const product = await response.json();
+            displayProduct(product);
+        }
+
+        const displayProduct = (product) => {
+            const parent = document.getElementById("divProducts");
+
+            parent.innerHTML = `
+                <div>
+                    <h5>${product.productName}</h5>
+                    <p>${product.price}</p>
+                </div>
+            `;
+
+        }
 
         const displayProducts = (products) => {
             const parent = document.getElementById("divProducts");
